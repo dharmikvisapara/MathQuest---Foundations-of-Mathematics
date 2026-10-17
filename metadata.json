@@ -1,0 +1,6 @@
+{
+  "name": "MathQuest - Foundations of Mathematics",
+  "description": "Interactive Foundations of Mathematics learning arena and dynamic AI-powered quiz web game covering Combinatorics, Numerical Methods, Operations Research, and Boolean Algebra.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

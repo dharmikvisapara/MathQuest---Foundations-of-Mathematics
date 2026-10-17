@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en" class="dark" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MathQuest - Foundations of Mathematics</title>
+    <meta name="description" content="Interactive Foundations of Mathematics learning arena and dynamic AI-powered quiz web game covering Combinatorics, Numerical Methods, Operations Research, and Boolean Algebra." />
+    <meta property="og:title" content="MathQuest - Foundations of Mathematics" />
+    <meta property="og:description" content="Interactive Foundations of Mathematics learning arena and dynamic AI-powered quiz web game covering Combinatorics, Numerical Methods, Operations Research, and Boolean Algebra." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <script>
+      (function() {
+        try {
+          var saved = localStorage.getItem('mathquest_settings');
+          var theme = saved ? JSON.parse(saved).theme : 'dark';
+          var doc = document.documentElement;
+          doc.classList.remove('dark', 'light');
+          doc.classList.add(theme);
+          doc.setAttribute('data-theme', theme);
+        } catch (e) {
+          document.documentElement.classList.add('dark');
+          document.documentElement.setAttribute('data-theme', 'dark');
+        }
+      })();
+    </script>
+  </head>
+  <body class="antialiased selection:bg-violet-500 selection:text-white transition-colors duration-200">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+
